@@ -1,7 +1,8 @@
 # iOS 商品库存管理 SKU的选择
 ##项目需求
 简单说一下我的需求:服务端给我传了两组数据，要求实现淘宝选择商品规格的功能。
-![选择对应商品规格，加入购物车](https://upload-images.jianshu.io/upload_images/3119643-6a8471ef5c4a626f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![选择对应商品规格，加入购物车](https://github.com/zhinzhang/sku_manage/blob/master/3119643-6a8471ef5c4a626f.png)
 
 ```
 //这是所有sku的数组，spec_array为每一条sku所包含的所有规格
@@ -669,7 +670,7 @@ typedef NS_ENUM(NSInteger, ItemType) {  // 0 是默认值, 不能设置为 0
 indexPath(1,0),indexPath(1,1),
 indexPath(2,0),indexPath(2,1)]
 ```
-![每一个规格所在的indexPath](https://upload-images.jianshu.io/upload_images/3119643-7e64c05fc657c443.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![每一个规格所在的indexPath](https://github.com/zhinzhang/sku_manage/blob/master/3119643-7e64c05fc657c443.png.jpeg)
 
 每一条sku都有按照section的顺序都可以根据indexPath.row生成一个所在位置的数组，例如SKU **A2+1颗/约4.9分+K金** 可以写成[0,0,1]，那么四种组合方式可以得到四个数组
 `valid_paths = [[0,0,1],[2,0,1],[1,1,0],[2,1,0]]`
